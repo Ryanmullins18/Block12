@@ -1,30 +1,28 @@
 
-.navBar {
-    background: scroll;
-    width: 99%;
-    height: 70px;
-    border: solid;
-    background-size: 10px;
-    background-color: rgb(74, 73, 73);
-    position: fixed;
-    top: 0;
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgb(4, 35, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
 }
 
 body {
-    background-color: rgb(6, 99, 131);
     position: relative;
-}
-.name {
-    font-size: xx-large;
-    color: white;
+  background-color: rgb(4, 35, 45);
 }
 .center {
-    background-color: blue;
+    background-color: rgb(4, 35, 45);
     width: 60%;
     margin-left: 20%;
-    margin-top: 70px;
-    border: solid black;
+   margin-top: 100px;
+    border: solid none;
     margin-bottom: 70px;
+    height: 100%;
 }
 .paragraph1 {
     width: 30%;
@@ -34,14 +32,14 @@ body {
     margin-left: 20%;
     color: white;
 }
-.pic {
+.pic1 {
     padding-left: 10px;
     margin-top: 10%;
     width: 100%;
 }
 footer {
     text-align: center;
-    background-color: rgb(74, 73, 73);
+    background-color: rgb(4, 35, 45);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -52,9 +50,15 @@ footer {
 }
 .quote {
     width: 60%;
-    text-align: center;
+    text-align: right;
     font-size: xx-large;
-    margin-bottom: 200px;
+    width: 60%;
+    text-align: right;
+    font-size: xx-large;
+    margin-bottom: 400px;
+    right: 0;
+    position: absolute;
+    bottom: -324px;
 }
 #main {
     margin-bottom: 350px;
@@ -75,5 +79,139 @@ footer {
     margin-left: 15%;
 } 
 form {
-    margin-top: 50%;
+    margin-bottom: 100%;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+@media screen and (max-width: 500px) {
+ .quote {
+        width: 50%;
+        text-align: right;
+        font-size: xx-large;
+        width: 50%;
+        text-align: right;
+        font-size: xx-large;
+        margin-bottom: 500px;
+        right: 0;
+        position: absolute;
+        bottom: -420px;
+    }
+    .center {
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+    }
+    .navBar{
+        width: 86%;
+    }
+        .hire {
+            position: absolute;
+            /* left: 100px; */
+            top: 943px;
+            font-size: xx-large;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+        }
+    
+    
+    .paragraph1 {
+        /* width: 30%; */
+        padding-left: 10%;
+        /* margin-bottom: 50px; */
+        font-size: large;
+        margin-left: 20%;
+        color: white;
+    }    
+    .pic1 {
+        width: 200px !important;
+        height: 200px;
+    }
+    .info {
+        width: 83%;
+    }
+    .intro{
+        width: 83%;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .profile {
+        max-width: 100%;
+        max-height: 100%;
+            position: relative;
+            top: 83px;
+            right: 7px;
+            z-index: 0;
+    }
+}
+
+
+.navbar a:hover, 
+.navbar a.active {
+    color: blue;
+}
+a:link {
+    text-decoration: none ;
+}
+.logo {
+    font-size: x-large;
+    color: white;
+}
+.info {
+    margin-top: 130px;
+    font-size: xxx-large;
+    border-right: 5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s, cursor .4s step-end infinite alternate;
+}
+.navbar a {
+    font-size: 20px;
+    color: white;
+text-decoration: none;
+font-weight: 500;
+padding-right: 20px;
+}
+.intro{
+    color: red;
+    font-size: xx-large;
+    display: inline-block;
+    border-right: 5px;
+    width: 83%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s, cursor .4s step-end infinite alternate;
+}
+.hire {
+    position: absolute;
+    left: 100px;
+    top: 729px;
+    font-size: xx-large;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+.hire:hover {
+    background-color: white;
+    color: black;
+}
+.home {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+@keyframes typing {
+    from {width: 0;}
+}
+.profile {
+    position: absolute;
+    top: 10px;
+    right: 400px;
+    z-index: 0;
 }

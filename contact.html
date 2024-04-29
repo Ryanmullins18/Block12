@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
-    <div class="navBar">
-        <nav> 
-                <div class="name">Ryan Mullins</div>
-            <div style="text-align: right;">
-                <a href="http://127.0.0.1:5500/index.html" style="color: white; font-size: x-large;">Home</a>
-            <a href="http://127.0.0.1:5500/about.html" style="color: white;  font-size: x-large;">About</a> 
-            <a href="http://127.0.0.1:5500/portfolio.html" style="color: white; font-size: x-large;">Portfolio</a>
-            <a href="http://127.0.0.1:5500/contact.html" style="color: white; font-size: x-large;">Contact</a>
-                </div> 
-        </nav>
-        </div>
+   
 </head>
-<body>   
-    <form>
-        <input type="text">
-          <input type="submit" value="Submit">
+<body>  
+    <header class="header">
+        <p class="logo">Ryan Mullins</p>
+    <nav class="navbar"> 
+        <a href="http://127.0.0.1:5500/index.html">Home</a>
+    <a href="http://127.0.0.1:5500/about.html">About</a> 
+    <a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a>
+    <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+        
+    </nav>
+</header> 
+    <div class="center">
+    <h1 style="color: white;">Contact Me</h1>
+    <h2 style="color: white;">Your information</h2>
+        <form id="form">
+        <div>
+            <h3 style="color: white;">Name</h3>
+        <label for="ftext"></label>
+        <input type="name" style="width: 250px;" value=""/>
+    </div>
+    <div>
+        <h3 style="color: white;">Email</h3>
+        <label for="ftext"></label>
+        <input type="name" style="width: 250px;" value=""/>
+    </div>
+    <div>
+        <h3 style="color: white;">Message</h3>
+        <textarea for="ftext" style="width: 250px; height: 100px;"></textarea>
+        
+    </div>
+  
+    <button id="submit" type="submit">Submit</button>
     </form>
-        </form>
-      </div>
+</div>
+      <footer> 
+        <div class="yahoo" style="display: inline-block;">
+        <a href="mailto: mully9295@yahoo.com" style="display: inline-block;"><img src="yahoo.png" width="100px; height=100px;"></a>
+        </div>
+        <a href="mailto: ryanmullins518@gmail.com"><img src="gmail.png" width="100px; height=100px;"></a>
+        </footer>
       <script src="javascript.js"></script>
 </body>
 </html>

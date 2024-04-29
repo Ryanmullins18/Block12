@@ -5,44 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
-        <div class="navBar">
-        <nav> 
-                <div class="name">Ryan Mullins</div>
-            <div style="text-align: right;">
-                <a href="http://127.0.0.1:5500/index.html" style="color: white; font-size: x-large;">Home</a>
-            <a href="http://127.0.0.1:5500/about.html" style="color: white;  font-size: x-large;">About</a> 
-            <a href="http://127.0.0.1:5500/portfolio.html" style="color: white; font-size: x-large;">Portfolio</a>
-            <a href="http://127.0.0.1:5500/contact.html" style="color: white; font-size: x-large;">Contact</a>
-                </div> 
-        </nav>
-        </div>
 </head>
-<body>
-        <div class="center">
 
-    <h1 style="color: white;">Student, Firefighter, Father</h1>
-    <hr>
-            <div style="display: inline-block;">
-                <div class="pic" style="display: inline-block;">
-                    <img src="profile.png"
-                    width=400px;
-                    height=400px; style="float: left;">
-                    <div class="paragraph1" style="display: inline-block;">
-                        <h2 style="display: inline-block;">Interested in learning the art of coding and learning something new every day.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="quote">
-                <blockquote style="color: white;">
-                    “There is no end to education. It is not that you read a 
-                    book, pass an examination, and finish with education. 
-                    The whole of life, from the moment you are born to the 
-                    moment you die, is a process of learning.” — Jiddu 
-                    Krishnamurti</blockquote>
-            </div>
-        </div>
-    <script src="javascript.js"></script>
+<body>
+    <header class="header">
+        <p class="logo">Ryan Mullins</p>
+    <nav class="navbar"> 
+        <a href="http://127.0.0.1:5500/index.html" class="active">Home</a>
+    <a href="http://127.0.0.1:5500/about.html">About</a> 
+    <a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a>
+    <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+        
+    </nav>
+</header>
+<div class="home">
+  <div class="home-content">  
+    <div class="profile">
+        <img id="profile-pic" src="profile.png">
+    </div>
+    <h1 class="info" style="color: white;">Hi, I'm Ryan Mullins</h1>
+    <div class="intro">FullStack Academy Student</div>
+    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet beatae saepe 
+        laborum ipsum quibusdam mollitia, debitis rerum eius sapiente recusandae. 
+        Porro ab ratione, dignissimos animi cupiditate odit eaque error. Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Voluptas atque placeat sunt? Unde suscipit recusandae alias, quae veritatis animi. 
+        Excepturi est optio repudiandae tenetur neque nesciunt eum, voluptates suscipit similique.
+    </p>
+   </div>
+            
+                   <a href="http://127.0.0.1:5500/contact.html"> 
+                    <button class="hire">Lets Talk</button>
+                   </a>
+       
+</div>  
 </body>
+
 <footer> 
     <div class="yahoo" style="display: inline-block;">
     <a href="mailto: mully9295@yahoo.com" style="display: inline-block;"><img src="yahoo.png" width="100px; height=100px;"></a>
